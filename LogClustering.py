@@ -1,3 +1,10 @@
+import warnings
+import os
+import logging
+warnings.filterwarnings("ignore")
+logging.disable(logging.WARNING)
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+
 import sys
 import numpy as np
 sys.path.append('../')

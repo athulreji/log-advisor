@@ -5,6 +5,12 @@ Authors:
     LogPAI Team
 
 """
+import warnings
+import os
+import logging
+warnings.filterwarnings("ignore")
+logging.disable(logging.WARNING)
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 
 
 import pandas as pd
@@ -42,7 +48,7 @@ class FeatureExtractor(object):
         -------
             X_new: The transformed data matrix
         """
-        print('====== Transformed train data summary ======')
+        # print('====== Transformed train data summary ======')
         self.term_weighting = term_weighting
         self.normalization = normalization
         self.oov = oov
@@ -78,7 +84,7 @@ class FeatureExtractor(object):
             X[X != 0] = expit(X[X != 0])
         X_new = X
         
-        print('Train data shape: {}-by-{}\n'.format(X_new.shape[0], X_new.shape[1])) 
+        # print('Train data shape: {}-by-{}\n'.format(X_new.shape[0], X_new.shape[1])) 
         return X_new
 
     def transform(self, X_seq):
@@ -93,7 +99,7 @@ class FeatureExtractor(object):
         -------
             X_new: The transformed data matrix
         """
-        print('====== Transformed test data summary ======')
+        # print('====== Transformed test data summary ======')
         X_counts = []
         for i in range(X_seq.shape[0]):
             event_counts = Counter(X_seq[i])
@@ -118,6 +124,6 @@ class FeatureExtractor(object):
             X[X != 0] = expit(X[X != 0])
         X_new = X
 
-        print('Test data shape: {}-by-{}\n'.format(X_new.shape[0], X_new.shape[1])) 
+        # print('Test data shape: {}-by-{}\n'.format(X_new.shape[0], X_new.shape[1])) 
 
         return X_new

@@ -1,5 +1,11 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import warnings
+import os
+import logging
+warnings.filterwarnings("ignore")
+logging.disable(logging.WARNING)
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 import requests
 from IsolationForest import isolationForest
 from LogClustering import logClustrering
@@ -39,7 +45,7 @@ if __name__ == '__main__':
     sequence = res[0]
 
 # Send POST request to Flask server
-    response = requests.post('http://127.0.0.1:5000/gemini', json={'sequence': sequence})
+    response = requests.post('http://192.168.110.52:5000/gemini', json={'sequence': sequence})
 
     # Print the server's response
     if response.status_code == 200:

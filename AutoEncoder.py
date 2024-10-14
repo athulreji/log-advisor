@@ -1,6 +1,12 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
- 
+import warnings
+import os
+import logging
+warnings.filterwarnings("ignore")
+logging.disable(logging.WARNING)
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
+
 import sys
 import numpy as np
 from sklearn.metrics import precision_score, recall_score, f1_score
@@ -8,6 +14,7 @@ from keras.models import Model
 from keras.layers import Input, Dense
 from sklearn.preprocessing import StandardScaler
  
+
 sys.path.append('../')
 from loglizer import dataloader, preprocessing
  
@@ -40,7 +47,7 @@ class AutoencoderModel:
         """
         Train the autoencoder model on normal data.
         """
-        self.autoencoder.fit(X_train, X_train, epochs=epochs, batch_size=batch_size, shuffle=True, validation_split=0.1)
+        self.autoencoder.fit(X_train, X_train, epochs=epochs, batch_size=batch_size, shuffle=True, validation_split=0.1, verbose=0)
  
     def predict(self, X):
         """
@@ -65,7 +72,7 @@ class AutoencoderModel:
         recall = recall_score(y_true, y_pred)
         f1 = f1_score(y_true, y_pred)
  
-        print(f'Precision: {precision:.3f}, Recall: {recall:.3f}, F1-score: {f1:.3f}')
+        # print(f'Precision: {precision:.3f}, Recall: {recall:.3f}, F1-score: {f1:.3f}')
         return precision, recall, f1
  
  
