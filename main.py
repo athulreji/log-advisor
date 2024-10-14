@@ -39,7 +39,7 @@ if __name__ == '__main__':
     sequence = res[0]
 
 # Send POST request to Flask server
-    response = requests.post('http://127.0.0.1:5000/analyze', json={'sequence': sequence})
+    response = requests.post('http://127.0.0.1:5000/gemini', json={'sequence': sequence})
 
     # Print the server's response
     if response.status_code == 200:
