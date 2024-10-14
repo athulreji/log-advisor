@@ -16,8 +16,24 @@ struct_log = 'data/HDFS/HDFS_100k.log_structured.csv' # The structured log file
 label_file = 'data/HDFS/anomaly_label.csv' # The anomaly label file
 max_dist = 0.3 # the threshold to stop the clustering process
 anomaly_threshold = 0.3 # the threshold for anomaly detection
+def choose_model():
+    print("Choose the model for response:")
+    print("1. Gemini")
+    print("2. Llama")
+
+    choice = input("Enter the number of your choice (1 or 2): ").strip()
+
+    if choice == '1':
+        return "gemini"
+    elif choice == '2':
+        return "llama"
+    else:
+        return "exit"
+
 
 if __name__ == '__main__':
+    print("\t\tLog Advisor")
+    print("model running...")
     (x_train, y_train), (x_test, y_test) = dataloader.load_HDFS(struct_log,
                                                                 label_file=label_file,
                                                                 window='session', 
@@ -43,14 +59,22 @@ if __name__ == '__main__':
     # print(res, len(res))
 
     sequence = res[0]
+    while True:
+        flag = choose_model()
+        if flag == "exit":
+            break
+        elif flag == "gemini":
+            url = 'http://192.168.110.52:5000/gemini'  # Flask endpoint for Gemini
+        else:
+            url = 'http://192.168.110.52:5000/llama'
+        # Send POST request to Flask server
+        response = requests.post(url, json={'sequence': sequence})
 
-# Send POST request to Flask server
-    response = requests.post('http://192.168.110.52:5000/gemini', json={'sequence': sequence})
-
-    # Print the server's response
-    if response.status_code == 200:
-        print('Response from server:', response.json()['response'])
-    else:
-        print('Error:', response.status_code)
+        # Print the server's response
+        if response.status_code == 200:
+            print('Response from server:', response.json()['response'])
+        else:
+            print('Error:', response.status_code)
 
 
+   
