@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
+import requests
 from IsolationForest import isolationForest
 from LogClustering import logClustrering
 from AutoEncoder import autoEncoder
@@ -34,5 +34,17 @@ if __name__ == '__main__':
     # print(y_out1)
     # print(y_out2)
     # print(y_out3)
-    print(res, len(res))
+    # print(res, len(res))
+
+    sequence = res[0]
+
+# Send POST request to Flask server
+    response = requests.post('http://127.0.0.1:5000/analyze', json={'sequence': sequence})
+
+    # Print the server's response
+    if response.status_code == 200:
+        print('Response from server:', response.json()['response'])
+    else:
+        print('Error:', response.status_code)
+
 
