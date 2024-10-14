@@ -121,7 +121,7 @@ def load_HDFS(log_file, label_file=None, window='session', train_ratio=0.5, spli
             log = "{} {} windows ({}/{} anomaly), {}/{} normal"
             # print(log.format("Train:", x_train.shape[0], y_train.sum(), y_train.shape[0], (1-y_train).sum(), y_train.shape[0]))
             # print(log.format("Test:", x_test.shape[0], y_test.sum(), y_test.shape[0], (1-y_test).sum(), y_test.shape[0]))
-            return (x_train, window_y_train, y_train), (x_test, window_y_test, y_test)
+            return (x_train, window_y_train, y_train), (x_test, window_y_test, y_test), (events_dict)
 
         if label_file is None:
             if split_type == 'uniform':
@@ -133,7 +133,7 @@ def load_HDFS(log_file, label_file=None, window='session', train_ratio=0.5, spli
             (x_train, _), (x_test, _) = _split_data(x_data, train_ratio=train_ratio, split_type=split_type)
             # print('Total: {} instances, train: {} instances, test: {} instances'.format(
                 #   x_data.shape[0], x_train.shape[0], x_test.shape[0]))
-            return (x_train, None), (x_test, None), data_df
+            return (x_train, None), (x_test, None), (events_dict)
     else:
         raise NotImplementedError('load_HDFS() only support csv and npz files!')
 
@@ -151,7 +151,7 @@ def load_HDFS(log_file, label_file=None, window='session', train_ratio=0.5, spli
     # print('Test: {} instances, {} anomaly, {} normal\n' \
         #   .format(num_test, num_test_pos, num_test - num_test_pos))
 
-    return (x_train, y_train), (x_test, y_test)
+    return (x_train, y_train), (x_test, y_test), (events_dict)
 
 def slice_hdfs(x, y, window_size):
     results_data = []
