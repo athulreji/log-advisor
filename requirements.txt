@@ -1,3 +1,6 @@
 sklearn
 pandas
 keras
+numpy
+tensorflow
+requests
