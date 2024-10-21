@@ -1,0 +1,5608 @@
+{
+    "Records": [
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "apple"
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "apple",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "apple"
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "banana"
+            },
+            "sourceIPAddress": "198.51.100.75",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "banana",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "198.51.100.75",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "banana",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "198.51.100.75",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "banana",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "198.51.100.75",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "banana",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "198.51.100.75",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "banana",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "198.51.100.75",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "banana",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "198.51.100.75",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "banana",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "198.51.100.75",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "banana",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "198.51.100.75",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "banana"
+            },
+            "sourceIPAddress": "198.51.100.75",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "orange"
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "orange",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "orange",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "orange",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "orange",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "orange",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "orange"
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "grape"
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "grape",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "grape",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "grape",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "grape",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "grape",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "grape"
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "strawberry"
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "strawberry",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "strawberry"
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "watermelon"
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "watermelon",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "watermelon",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "watermelon",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "watermelon",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "watermelon"
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "kiwi"
+            },
+            "sourceIPAddress": "10.0.0.5",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "kiwi",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.0.0.5",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "kiwi"
+            },
+            "sourceIPAddress": "10.0.0.5",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blueberry"
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blueberry",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blueberry",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blueberry"
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "peach"
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "peach",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "peach",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "peach",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "peach",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "peach",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "peach",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "peach",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "peach",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "peach",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "peach"
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "mango"
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "mango",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "mango",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "mango",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "mango",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "mango",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "mango",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "mango",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "mango"
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pineapple"
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pineapple",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pineapple",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pineapple",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pineapple"
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "apricot"
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "apricot",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "apricot",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "apricot",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "apricot",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "apricot",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "apricot",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "apricot"
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pear"
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pear",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pear",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pear"
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe"
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cantaloupe"
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "papaya"
+            },
+            "sourceIPAddress": "203.0.113.25",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "papaya",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.25",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "papaya",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.25",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "papaya",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.25",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "papaya",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.25",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "papaya",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.25",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "papaya",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.25",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "papaya",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.25",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "papaya"
+            },
+            "sourceIPAddress": "203.0.113.25",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cherry"
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cherry",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cherry",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cherry",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cherry",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cherry",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cherry",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cherry",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cherry",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cherry",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cherry",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "cherry"
+            },
+            "sourceIPAddress": "10.1.1.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blackberry"
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blackberry",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blackberry",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blackberry",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blackberry",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blackberry",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blackberry",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blackberry",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blackberry",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blackberry",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blackberry",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blackberry",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blackberry",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "blackberry"
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "fig"
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "fig",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "fig",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "fig",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "fig",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "fig",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "fig",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "fig",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "fig"
+            },
+            "sourceIPAddress": "172.16.254.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pomegranate"
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pomegranate",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pomegranate",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pomegranate",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pomegranate",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pomegranate",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pomegranate",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pomegranate",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pomegranate",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pomegranate",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pomegranate",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pomegranate",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pomegranate",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "pomegranate"
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "tangerine"
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "tangerine"
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lemon"
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lemon",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lemon",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lemon",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lemon",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lemon",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lemon",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lemon",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lemon",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lemon"
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lime"
+            },
+            "sourceIPAddress": "10.0.0.5",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lime",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.0.0.5",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lime",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.0.0.5",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lime",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.0.0.5",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lime",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.0.0.5",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lime",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.0.0.5",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lime",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "10.0.0.5",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "lime"
+            },
+            "sourceIPAddress": "10.0.0.5",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "coconut"
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "coconut",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "coconut",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "coconut",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "coconut",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "coconut",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "coconut",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "coconut",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "coconut",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "coconut",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "coconut"
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "date"
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "date",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "date",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "date",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "date",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "date",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "date",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "date",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "date"
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "guava"
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "guava",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "guava",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "guava",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "guava",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "guava",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "guava",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "guava"
+            },
+            "sourceIPAddress": "203.0.113.45",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "plum"
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "plum",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "plum",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "plum",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "plum",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "plum",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "plum",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "plum",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "plum"
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "nectarine"
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "nectarine",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "nectarine",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "nectarine",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "nectarine",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "nectarine",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "nectarine",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "nectarine",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "nectarine",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "nectarine",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "nectarine",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "nectarine",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "nectarine",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "nectarine"
+            },
+            "sourceIPAddress": "192.168.1.10",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "raspberry"
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "raspberry",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "raspberry",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "raspberry",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "raspberry",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "raspberry"
+            },
+            "sourceIPAddress": "192.168.0.255",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "dragonfruit"
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "dragonfruit",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "dragonfruit",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "dragonfruit",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "dragonfruit",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "dragonfruit",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "dragonfruit",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "dragonfruit"
+            },
+            "sourceIPAddress": "127.0.0.1",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:45:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "jackfruit"
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "jackfruit",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "jackfruit",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "jackfruit",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "jackfruit",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "jackfruit",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "jackfruit",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "jackfruit",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:05:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "jackfruit",
+                "key": {
+                    "OrderID": {
+                        "S": "12345"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "SHIPPED"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "jackfruit",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T12:55:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "jackfruit",
+                "item": {
+                    "OrderID": {
+                        "S": "12345"
+                    },
+                    "CustomerID": {
+                        "S": "98765"
+                    }
+                }
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T13:15:20Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": "arn:aws:iam::123456789012:user/JohnDoe"
+            },
+            "requestParameters": {
+                "tableName": "jackfruit"
+            },
+            "sourceIPAddress": "192.0.2.88",
+            "userAgent": "aws-cli/2.0.30"
+        }
+    ]
+}

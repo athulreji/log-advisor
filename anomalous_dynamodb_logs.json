@@ -1,0 +1,83 @@
+{
+    "Records": [
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T14:00:15Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "arn": "arn:aws:sts::999988887777:assumed-role/ExternalAdmin/unknown-user"
+            },
+            "requestParameters": {
+                "tableName": "SensitiveData"
+            },
+            "sourceIPAddress": "203.0.113.0",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T14:01:15Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "PutItem",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "arn": "arn:aws:sts::999988887777:assumed-role/ExternalAdmin/unknown-user"
+            },
+            "requestParameters": {
+                "tableName": "SensitiveData",
+                "item": {
+                    "OrderID": {
+                        "S": "99999"
+                    },
+                    "CustomerID": {
+                        "S": "54321"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.0",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T14:02:15Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "arn": "arn:aws:sts::999988887777:assumed-role/ExternalAdmin/unknown-user"
+            },
+            "requestParameters": {
+                "tableName": "SensitiveData"
+            },
+            "sourceIPAddress": "203.0.113.0",
+            "userAgent": "aws-cli/2.0.30"
+        },
+        {
+            "eventVersion": "1.0",
+            "eventTime": "2024-10-11T14:03:15Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "UpdateItem",
+            "userIdentity": {
+                "type": "AssumedRole",
+                "arn": "arn:aws:sts::999988887777:assumed-role/ExternalAdmin/unknown-user"
+            },
+            "requestParameters": {
+                "tableName": "SensitiveData",
+                "key": {
+                    "OrderID": {
+                        "S": "99999"
+                    }
+                },
+                "updateExpression": "SET OrderStatus = :status",
+                "expressionAttributeValues": {
+                    ":status": {
+                        "S": "DELETED"
+                    }
+                }
+            },
+            "sourceIPAddress": "203.0.113.0",
+            "userAgent": "aws-cli/2.0.30"
+        }
+    ]
+}

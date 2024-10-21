@@ -1,0 +1,3 @@
+[console_scripts]
+log-advisor = main:run
+

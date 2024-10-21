@@ -38,7 +38,7 @@ if __name__ == '__main__':
     print("Injecting data from HDFS....\n")
     (x_train, y_train), (x_test, y_test), (event_dict) = dataloader.load_HDFS(struct_log,
                                                                 label_file=label_file,
-                                                                window='session', 
+                                                                window='session',
                                                                 train_ratio=0.5,
                                                                 split_type='uniform')
     feature_extractor = preprocessing.FeatureExtractor()
@@ -71,7 +71,7 @@ if __name__ == '__main__':
     # print(res, len(res))
     total_blocks=len(x_test)
     anomalous_blocks =len(res)
-
+    
     print("Summary:")
     print(f"\tTotal blocks: {total_blocks}\n\tAnomalous blocks: {anomalous_blocks}")
 
@@ -104,24 +104,3 @@ if __name__ == '__main__':
                 print(response.json()['response'])
             else:
                 print('Error:', response.status_code)
-
-    
-    # while True:
-    #     flag = menu()
-    #     if flag == "exit":
-    #         break
-    #     elif flag == "gemini":
-    #         url = 'http://192.168.110.52:5000/gemini'  # Flask endpoint for Gemini
-    #     else:
-    #         url = 'http://192.168.110.52:5000/llama'
-    #     # Send POST request to Flask server
-    #     response = requests.post(url, json={'sequence': sequence})
-
-    #     # Print the server's response
-    #     if response.status_code == 200:
-    #         print('Response from server:', response.json()['response'])
-    #     else:
-    #         print('Error:', response.status_code)
-
-
-   
