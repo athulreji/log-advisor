@@ -9,8 +9,13 @@ os.environ["TF_CPP_MIN_LOG_LEVEL"] = "3"
 import requests
 from IsolationForest import isolationForest
 from LogClustering import logClustrering
+
+from dynamo_preprocess import preprocess
 import time
 from AutoEncoder import autoEncoder
+from sklearn.ensemble import IsolationForest
+from sklearn.preprocessing import LabelEncoder
+import numpy as np
 from loglizer import dataloader, preprocessing
 
 struct_log = 'data/HDFS/HDFS_100k.log_structured.csv' # The structured log file
@@ -36,11 +41,51 @@ def menu():
 if __name__ == '__main__':
     print("------------LOG ADVISOR------------\n\n")
     print("Injecting data from HDFS....\n")
-    (x_train, y_train), (x_test, y_test), (event_dict) = dataloader.load_HDFS(struct_log,
-                                                                label_file=label_file,
-                                                                window='session',
-                                                                train_ratio=0.5,
-                                                                split_type='uniform')
+    x_train, x_test = preprocess()
+    # x_test = x_train
+
+    # print(x_train,x_test)
+    with open("nonan.txt", 'w') as file:
+        for data in x_train:
+            file.write(str(data) + '\n') 
+    with open("an.txt", 'w') as file:
+        for data in x_test:
+            file.write(str(data) + '\n') 
+    
+
+    # all_sequences = np.concatenate([x_train, x_test], axis=0)
+    # all_events = set([event for seq in all_sequences for event in seq])
+
+    # # Label encode the events
+    # le = LabelEncoder()
+    # le.fit(list(all_events))
+
+    # # Step 2: Convert sequences into numerical format
+    # def encode_and_pad_sequences(sequences, max_len=None):
+    #     encoded_sequences = [le.transform(seq) for seq in sequences]
+    #     if max_len is None:
+    #         max_len = max(len(seq) for seq in encoded_sequences)
+    #     # Pad shorter sequences with -1 to match length
+    #     encoded_sequences_padded = [np.pad(seq, (0, max_len - len(seq)), 'constant', constant_values=-1) for seq in encoded_sequences]
+    #     return np.array(encoded_sequences_padded), max_len
+
+    # # Encode and pad non-anomalous sequences (train data)
+    # X_train, max_len = encode_and_pad_sequences(x_train)
+
+    # # Encode and pad anomalous sequences (test data)
+    # X_test, _ = encode_and_pad_sequences(x_test, max_len)
+
+    # # Step 3: Train Isolation Forest on the non-anomalous sequences
+    # model = IsolationForest(contamination=0.2, random_state=42)
+    # model.fit(X_train)
+
+    # # Step 4: Predict on anomalous sequences
+    # predictions = model.predict(X_test)
+
+    # # -1 indicates an anomaly, 1 indicates a normal sequence
+    # for i, pred in enumerate(predictions):
+    #     print(f"Sequence {x_test[i]} is {'anomalous' if pred == -1 else 'normal'}")
+
     feature_extractor = preprocessing.FeatureExtractor()
     x_train = feature_extractor.fit_transform(x_train, term_weighting='tf-idf')
     x_test2 = feature_extractor.transform(x_test)
@@ -53,16 +98,19 @@ if __name__ == '__main__':
 
     print("\tComplete.\n")
     print("\tLog Clustering Model executing...")
-    y_out2 = logClustrering(x_train=x_train,y_train=y_train, x_test=x_test2)
+    y_out2 = logClustrering(x_train=x_train, x_test=x_test2)
     print("\tComplete.\n")
     print("\tAuto Encoder executing...")
-    y_out3 = autoEncoder(x_test=x_test2,x_train=x_train,y_train=y_train)
+    y_out3 = autoEncoder(x_test=x_test2,x_train=x_train)
     print("\tComplete.\n")
 
     res = []
 
+    # print(y_out1,y_out2,y_out3)
+
     for i in range(len(x_test)):
-        if y_out2[i]+y_out1[i]+y_out3[i]>=2:
+        # if y_out2[i]+y_out1[i]+y_out3[i]>=1:
+        if y_out1[i]==1:
             res.append(x_test[i])
 
     # print(y_out1)

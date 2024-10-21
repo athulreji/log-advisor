@@ -20,7 +20,7 @@ from loglizer import dataloader, preprocessing
  
 struct_log = 'data/HDFS/HDFS_100k.log_structured.csv'  # The structured log file
 label_file = 'data/HDFS/anomaly_label.csv'  # The anomaly label file
-threshold = 0.1  # Threshold for anomaly detection based on reconstruction error
+threshold = 0.00000025  # Threshold for anomaly detection based on reconstruction error
  
  
 class AutoencoderModel:
@@ -76,8 +76,8 @@ class AutoencoderModel:
         return precision, recall, f1
  
  
-def autoEncoder(x_train, y_train, x_test):
-    x_train_normal = x_train[y_train==0]
+def autoEncoder(x_train, x_test):
+    x_train_normal = x_train
     model = AutoencoderModel(input_dim=x_train.shape[1])
     model.fit(x_train_normal, epochs=50, batch_size=64)
     res = model.predict(x_test)
