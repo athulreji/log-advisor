@@ -126,6 +126,90 @@ def generate_anomalous_logs():
 
     for i in range(1000):
         user_arn = "arn:aws:iam::123456789012:user/JohnDoe"
+        table_name = "table_"+ str(i+1)
+        source = random.choice(sources)
+        timestamps = [datetime(2024, 10, 11, 12, 45, 20) + timedelta(minutes=i * 10) for i in range(4)]
+
+        logs["Records"].append({
+            "eventVersion": "1.0",
+            "eventTime": timestamps[0].isoformat() + "Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "CreateTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": user_arn
+            },
+            "requestParameters": {
+                "tableName": table_name
+            },
+            "sourceIPAddress": source,
+            "userAgent": "aws-cli/2.0.30"
+        })
+
+        for _ in range(random.randint(1,4)):
+            for _ in range(random.randint(0,5)):
+                logs["Records"].append({
+                    "eventVersion": "1.0",
+                    "eventTime": timestamps[1].isoformat() + "Z",
+                    "eventSource": "dynamodb.amazonaws.com",
+                    "eventName": "PutItem",
+                    "userIdentity": {
+                        "type": "IAMUser",
+                        "arn": user_arn
+                    },
+                    "requestParameters": {
+                        "tableName": table_name,
+                        "item": {
+                            "OrderID": {"S": "12345"},
+                            "CustomerID": {"S": "98765"}
+                        }
+                    },
+                    "sourceIPAddress": source,
+                    "userAgent": "aws-cli/2.0.30"
+                })
+
+            for _ in range(random.randint(0,5)):
+                logs["Records"].append({
+                    "eventVersion": "1.0",
+                    "eventTime": timestamps[2].isoformat() + "Z",
+                    "eventSource": "dynamodb.amazonaws.com",
+                    "eventName": "UpdateItem",
+                    "userIdentity": {
+                        "type": "IAMUser",
+                        "arn": user_arn
+                    },
+                    "requestParameters": {
+                        "tableName": table_name,
+                        "key": {
+                            "OrderID": {"S": "12345"}
+                        },
+                        "updateExpression": "SET OrderStatus = :status",
+                        "expressionAttributeValues": {
+                            ":status": {"S": "SHIPPED"}
+                        }
+                    },
+                    "sourceIPAddress": source,
+                    "userAgent": "aws-cli/2.0.30"
+                })
+
+        logs["Records"].append({
+            "eventVersion": "1.0",
+            "eventTime": timestamps[3].isoformat() + "Z",
+            "eventSource": "dynamodb.amazonaws.com",
+            "eventName": "DeleteTable",
+            "userIdentity": {
+                "type": "IAMUser",
+                "arn": user_arn
+            },
+            "requestParameters": {
+                "tableName": table_name
+            },
+            "sourceIPAddress": source,
+            "userAgent": "aws-cli/2.0.30"
+        })
+
+    for i in range(1000, 1020):
+        user_arn = "arn:aws:iam::123456789012:user/JohnDoe"
         table_name = "table"+ str(i+1)
         source = random.choice(sources)
         timestamps = [datetime(2024, 10, 11, 12, 45, 20) + timedelta(minutes=i * 10) for i in range(4)]

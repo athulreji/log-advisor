@@ -4,8 +4,8 @@ import numpy as np
 # Open and read the JSON file
 
 def preprocess():
-    with open("non_anomalous_dynamodb_logs.json", "r") as file:
-        data = json.load(file)  # Load the JSON data
+    with open("non_anomalous_dynamodb_logs.json", "r") as file1:
+        data1 = json.load(file1)  # Load the JSON data
 
 
     tables = {}
@@ -17,7 +17,7 @@ def preprocess():
 
     eventMap = {}
     count = 1
-    for record in data["Records"]:
+    for record in data1["Records"]:
         if record['eventName']  not in eventMap:
             eventMap[record['eventName']] = "E"+ str(count)
             count+=1
@@ -39,8 +39,8 @@ def preprocess():
     
     x_train = np.array([list(j) for i,j in tables.items()])
 
-    with open("anomalous_dynamodb_logs.json", "r") as file:
-        data = json.load(file)  # Load the JSON data
+    with open("anomalous_dynamodb_logs.json", "r") as file2:
+        data2 = json.load(file2)  # Load the JSON data
 
 
     tables = {}
@@ -48,7 +48,7 @@ def preprocess():
     sources = {}
 
     requests = {}
-    for record in data["Records"]:
+    for record in data2["Records"]:
         eventID = eventMap[record['eventName']]
 
         if record["requestParameters"]["tableName"] not in tables:
@@ -66,4 +66,6 @@ def preprocess():
     # 
     
     x_test = np.array([list(j) for i,j in tables.items()])
+    for i, j in eventMap.items():
+        print(j,": ", i)
     return x_train, x_test

@@ -2,7 +2,7 @@ import sys
 sys.path.append('../')
 from loglizer.models import IsolationForest
 
-anomaly_ratio = 0.1
+anomaly_ratio = "auto"
 
 def isolationForest(x_train, x_test):
     model = IsolationForest(contamination=anomaly_ratio)
