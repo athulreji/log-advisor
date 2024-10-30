@@ -11,7 +11,8 @@ from IsolationForest import isolationForest
 from LogClustering import logClustrering
 from dynamo_preprocess2 import generate_anomalous_sequences, generate_non_anomalous_sequences
 import time
-from predict import predict
+from auto_encoder import predict
+from random_forest import predict2
 from sklearn.ensemble import IsolationForest
 from sklearn.preprocessing import LabelEncoder
 import numpy as np
@@ -63,11 +64,19 @@ if __name__ == '__main__':
     # print("\tLog Clustering Model executing...")
     # y_out2 = logClustrering(x_train=x_train, x_test=x_test2)
     # print("\tComplete.\n")
-    print("\tAuto Encoder executing...")
-    y_out3 = predict(x_test)
-    print("\tComplete.\n")
+    print("Analyzing event sequences using Random Forest...")
+    y_out2, non_an = predict2(x_test)
+    print("\tComplete")
+    print(f"\t{len(y_out2)} anomalous sequences detected.\n")
 
-    res = y_out3
+
+
+    print("Analyzing remaining event sequences using autoencoder...")
+    y_out3 = predict(non_an)
+    print("\tComplete")
+    print(f"\t{len(y_out3)} anomalous sequences detected.\n")
+
+    res = y_out2+y_out3
 
     # print(y_out1,y_out2,y_out3)
 

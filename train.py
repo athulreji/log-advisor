@@ -9,7 +9,7 @@ num_sequences = 100000
 non_anomalous_sequences = generate_non_anomalous_sequences(num_sequences)
 anomalous_sequences = generate_anomalous_sequences(100) + generate_non_anomalous_sequences(10)
 
-max_length = 12
+max_length = 15
 
 def pad_sequence(seq, max_length):
     return seq + [0] * (max_length - len(seq))

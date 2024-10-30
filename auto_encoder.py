@@ -9,9 +9,10 @@ def pad_sequence(seq, max_length):
     return seq + [0] * (max_length - len(seq))
 
 def predict(sequences):
-    max_length = 12
+    max_length = 15
 
     sequences_padded = np.array([pad_sequence(seq, max_length) for seq in sequences])
+    # print(sequences_padded)
 
     all_sequences = sequences_padded / np.max(sequences_padded)
 
